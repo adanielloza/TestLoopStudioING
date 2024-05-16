@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Loopstudios landing page</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/sass/main.css">
+</head>
+<body>
+  <header class="header">
+    
+      <div class="header__container wrap">
+        <div class="header__nav">
+          <a class="header__link" href="#"><img class="logo" src="images/logo.svg" alt="logo"></a>
+
+          <nav class="header__nav-desktop">
+            <ul class="header__nav-ul">
+              <li class="header__nav-list"><a class="header__nav-links" href="#">About</a></li>
+              <li class="header__nav-list"><a class="header__nav-links" href="#">Careers</a></li>
+              <li class="header__nav-list"><a class="header__nav-links" href="#">Events</a></li>
+              <li class="header__nav-list"><a class="header__nav-links" href="#">Products</a></li>
+              <li class="header__nav-list"><a class="header__nav-links" href="#">Support</a></li>
+            </ul>
+          </nav>
+
+          <button class="btn-burger"><img class="btn-burger__img" src="images/icon-hamburger.svg" alt="burger-icon"></button>
+        </div>
+        <div class="header__title">
+          <h1 class="header__paragraph">Immersive experiences that deliver</h1>
+        </div>
+        <div class="offcanvas" id="offCanvas">
+          <div class="offcanvas__top wrap">
+            <a href="#"><img class="logo" src="images/logo.svg" alt="logo"></a>
+            <button class="btn-close" data-target="#offCanvas"><img class="btn-close__icon" src="images/icon-close.svg" alt="icon-close"></button>
+          </div>
+          <nav class="wrap">
+            <ul class="offcanvas__ul">
+              <li class="offcanvas__list"><a class="offcanvas__links" href="#">About</a></li>
+              <li class="offcanvas__list"><a class="offcanvas__links" href="#">Careers</a></li>
+              <li class="offcanvas__list"><a class="offcanvas__links" href="#">Events</a></li>
+              <li class="offcanvas__list"><a class="offcanvas__links" href="#">Products</a></li>
+              <li class="offcanvas__list"><a class="offcanvas__links" href="#">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+  </header>
+
+  <article class="card wrap">
+    <div class="card__header">
+      <picture class="card__img-content">
+        <source class="card__img" srcset="images/desktop/image-interactive.jpg" media="(min-width: 1024px)">
+        <img class="card__img" src="images/mobile/image-interactive.jpg" alt="vr-games">
+      </picture>
+    </div>
+    <div class="card__body">
+      <h2 class="card__title">The leader in interactive VR</h2>
+      <p class="card__paragraph">Founded in 2011, Loopstudios has been producing world-class virtual reality 
+        projects for some of the best companies around the globe. Our award-winning 
+        creations have transformed businesses through digital experiences that bind 
+        to their brand.</p>
+    </div>
+  </article>
+
+  <section class="categories wrap">
+    <h3 class="categories__title">Our creations</h3>  
+    <div class="categories__gallery">
+      <picture class="categories__img-content">
+        <source srcset="images/desktop/image-deep-earth.jpg" media="(min-width: 768px)">
+        <img class="categories__img" src="images/mobile/image-deep-earth.jpg" alt="img-earth">
+        <span class="categories__img-title">Deep earth</span>
+      </picture>
+      <picture class="categories__img-content">
+        <source srcset="images/desktop/image-night-arcade.jpg" media="(min-width: 768px)">
+        <img class="categories__img" src="images/mobile/image-night-arcade.jpg" alt="img-games">
+        <span class="categories__img-title">Night arcade</span>
+      </picture>
+      <picture class="categories__img-content">
+        <source srcset="images/desktop/image-soccer-team.jpg" media="(min-width: 768px)">
+        <img class="categories__img" src="images/mobile/image-soccer-team.jpg" alt="img-soccer">
+        <span class="categories__img-title">Soccer team VR</span>
+      </picture>
+      <picture class="categories__img-content">
+        <source srcset="images/desktop/image-grid.jpg" media="(min-width: 768px)">
+        <img class="categories__img" src="images/mobile/image-grid.jpg" alt="img-racing">
+        <span class="categories__img-title">The grid</span>
+      </picture>
+      <picture class="categories__img-content">
+        <source srcset="images/desktop/image-from-above.jpg" media="(min-width: 768px)">
+        <img class="categories__img" src="images/mobile/image-from-above.jpg" alt="img-places">
+        <span class="categories__img-title">From up above VR</span>
+      </picture>
+      <picture class="categories__img-content">
+        <source srcset="images/desktop/image-pocket-borealis.jpg" media="(min-width: 768px)">
+        <img class="categories__img" src="images/mobile/image-pocket-borealis.jpg" alt="img-borealis">
+        <span class="categories__img-title">Pocket borealis</span>
+      </picture>
+      <picture class="categories__img-content">
+        <source srcset="images/desktop/image-curiosity.jpg" media="(min-width: 768px)">
+        <img class="categories__img" src="images/mobile/image-curiosity.jpg" alt="img-curiosity">
+        <span class="categories__img-title">The curiosity</span>
+      </picture>
+      <picture class="categories__img-content">
+        <source srcset="images/desktop/image-fisheye.jpg" media="(min-width: 768px)">
+        <img class="categories__img" src="images/mobile/image-fisheye.jpg" alt="img-eyefish">
+        <span class="categories__img-title">Make it fisheye</span>
+      </picture>
+    </div>
+    <a class="categories__button" href="#">See all</a>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer__container wrap">
+      <img class="logo logo--center" src="images/logo.svg" alt="logo">
+      <nav class="footer__nav">
+        <ul class="footer__nav-ul">
+          <li class="footer__nav-list"><a class="footer__nav-links" href="#">About</a></li>
+          <li class="footer__nav-list"><a class="footer__nav-links" href="#">Careers</a></li>
+          <li class="footer__nav-list"><a class="footer__nav-links" href="#">Events</a></li>
+          <li class="footer__nav-list"><a class="footer__nav-links" href="#">Products</a></li>
+          <li class="footer__nav-list"><a class="footer__nav-links" href="#">Support</a></li>
+        </ul>
+      </nav>
+      <div class="socials">
+        <a class="socials__link" href="#"><img class="socials__img" src="images/icon-facebook.svg" alt="icon-facebook"></a>
+        <a class="socials__link" href="#"><img class="socials__img" src="images/icon-twitter.svg" alt="icon-twitter"></a>
+        <a class="socials__link" href="#"><img class="socials__img" src="images/icon-pinterest.svg" alt="icon-pinterest"></a>
+        <a class="socials__link" href="#"><img class="socials__img" src="images/icon-instagram.svg" alt="icon-instagram"></a>
+      </div>
+      <p class="footer__copiright">© 2021 Loopstudios. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Exequiel Flores</a>.
+  </div>
+  <script src="./js/scripts.js"></script>
+</body>
+</html>

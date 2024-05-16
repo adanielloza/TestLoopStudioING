@@ -1,0 +1,19 @@
+.btn-burger{
+    padding: .5rem;
+    transition: transform 350ms ease;
+
+    &__img{
+        height: 1.1rem;
+        display: block;
+    }
+
+    &:hover{
+        transform: scale(1.2)
+    }
+}
+
+@include mq($tablet){
+    .btn-burger{
+        display: none;
+    }
+}

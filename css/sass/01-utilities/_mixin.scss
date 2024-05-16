@@ -1,0 +1,11 @@
+/* MediaQuery Desktop View */
+@mixin mq($size){
+    @media screen and (min-width: $size){
+        @content;
+    }
+}
+//*****************************//
+
+@mixin transition{
+    transition: all 200ms ease-in-out;
+}

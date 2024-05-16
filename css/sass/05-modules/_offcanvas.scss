@@ -1,0 +1,53 @@
+.offcanvas{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $Black;
+    padding: 1.5rem 0;
+    color: $White;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform 350ms ease, visibility 350ms ease;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+
+    &.show{
+        transform: scaleX(100%);
+        visibility: visible;
+    }
+    
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav{
+        margin: auto;
+    }
+
+    &__links{
+        color: currentColor;
+        display: inline-block;
+        padding: .5rem 0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin: 1rem 0;
+        transition:  text-shadow 350ms ease, font-size 350ms ease;
+
+        &:hover{
+            text-shadow: 0 0 3px currentColor;
+            font-size: 1.6rem;
+        }
+    }
+
+}
+
+@include mq($tablet){
+    .offcanvas{
+        display: none;
+    }
+}
